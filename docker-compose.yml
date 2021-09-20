@@ -1,0 +1,20 @@
+version: "3.7"
+services:
+  magnificent-monitor:
+    build:
+      context: magnificent-monitor/
+      dockerfile: DOCKERFILE
+    environment:
+      - SERVER_URL=http://magnificent-server:8081/
+      - PING_INTERVAL=1
+      - REPORT_INTERVAL=10
+      - LOG_SEVERITY=INFO
+
+  magnificent-server:
+    build:
+      context: magnificent-server
+      dockerfile: DOCKERFILE
+    ports:
+    - "8081:8081"
+volumes:
+  logvolume01: {}

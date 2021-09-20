@@ -1,4 +1,4 @@
-# The (not-so) magnificent monitor
+# The Magnificent monitor
 > This monitor regularly pings an endpoint of a webserver (**henceforth: the subject of the monitor**) and reports the health of its 
     subject to the console/log.
 

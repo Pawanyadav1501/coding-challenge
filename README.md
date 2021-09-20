@@ -52,7 +52,7 @@ docker-compose up
 
 
 
-#### Run without Docker magnificent-monitor
+#### Run without Docker magnificent-server
 ```
 # build the jar
 mvn clean package -f magnificent-server/pom.xml
